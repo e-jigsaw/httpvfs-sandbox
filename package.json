@@ -2,7 +2,10 @@
   "private": true,
   "name": "httpvfs-sandbox",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:webpack": "webpack --mode=production",
+    "copy:html": "cp index.html dist",
+    "copy:sqlite": "cp example.sqlite3 dist",
+    "deploy": "npm run build:webpack && npm run copy:html && npm run copy:sqlite"
   },
   "license": "MIT",
   "devDependencies": {
