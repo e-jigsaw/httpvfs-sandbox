@@ -27,7 +27,7 @@ jobs:
       - uses: actions/setup-node@v2.2.0
       - run: npm install
       - run: npm run deploy
-      - uses: JamesIves/github-pages-deploy-action
+      - uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
           branch: gh-pages
           folder: dist
